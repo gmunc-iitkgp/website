@@ -1,0 +1,431 @@
+/*
+Created by adiultra for esencia
+*/
+
+
+// Variables
+
+
+$blue: rgb(28, 162, 237);
+$green: rgb(139, 233, 73);
+$red: rgb(232, 106, 66);
+$yellow: #FFD05D;
+$pink: #F06C6C;
+$violet: #8B23D3;
+$rtfd: #8BA0AE;
+
+
+$white: rgb(255, 255, 255);
+$light: rgb(230, 230, 230);
+$light-grey: rgb(200, 200, 200);
+$grey: rgb(175, 175, 175);
+$dark-grey: rgb(50, 48, 40);
+$dark: rgb(40, 37, 35);
+
+$main-color: $violet;
+
+$shadow: rgba(0, 0, 0, 0.25);
+$shadow-dark: rgba(0, 0, 0, 0.5);
+
+$font-sans: "Lato", "Open Sans", sans;
+$font-display: "Playfair Display", serif;
+$font-color: $dark-grey;
+
+// Media Queries
+
+$mobile: "(orientation: portrait)";
+$desktop: "(orientation: landscape)";
+
+
+// Mixins
+
+@mixin button($color) {
+    margin: 2%;
+    padding: 2% 3%;
+
+    transition: all 0.2s;
+    text-decoration: none;
+
+    color: $white;
+    border-radius: 4px;
+
+    border: none;
+    background-color: $color;
+
+    font-size: 1.2em;
+    @media #{$mobile}{
+        font-size: 1.4em;
+    }
+    &:hover{
+        box-shadow: 0px 8px 16px $shadow;
+    }
+
+    &:active{
+        background-color: darken($color, 20%);
+    }
+}
+
+@mixin heading($size) {
+    margin: 0;
+    margin-top: 2%;
+    padding: 2% 0;
+
+    font-size: $size;
+    font-weight: 300;
+    text-align: center;
+    @media #{$mobile}{
+        margin-top: 8%;
+    }
+}
+
+@mixin special {
+    margin: 1% 1%;
+
+    text-align: center;
+    line-height: 3em;
+
+    a, input{
+        &.main-button{ @include button($main-color); };
+
+        &.blue-button{ @include button($blue); };
+
+        &.red-button{ @include button($red); };
+
+        &.green-button{ @include button($green); };
+
+        &.yellow-button{ @include button(darken($yellow, 10%)); };
+
+        &.black-button{ @include button($dark-grey); };
+
+        &.rtfd-button{@include button($rtfd);}
+    }
+}
+
+
+// ███████ ████████ ██    ██ ██      ███████
+// ██         ██     ██  ██  ██      ██
+// ███████    ██      ████   ██      █████
+//      ██    ██       ██    ██      ██
+// ███████    ██       ██    ███████ ███████
+
+
+html{
+    font-family: $font-sans;
+    font-size: 1.2em;
+    height: 100%;
+
+    @media #{$mobile}{
+        font-size: 1em;
+    }
+
+
+    body{
+        margin: 0px;
+        height: 100%;
+
+        .header{
+            height: 100%;
+
+            text-align: center;
+
+            color: $white;
+            background-image: linear-gradient($pink, $violet);
+            background-size: cover;
+            background-position: center;
+
+
+            font-family: $font-display;
+            
+            img{
+                width: 300px;
+                height: 300px;
+                margin: 5%;
+                @media #{$mobile}{
+                    margin-top: 30%;
+                }
+            }
+            h1{
+                @include heading(8em);
+                margin: -5% 0 0 0;
+                padding: 0;
+                font-weight: 900;
+                @media #{$mobile}{
+                    font-size: 10em;
+                }
+            }
+
+            h2{
+                @include heading(2em);
+                font-weight: 400;
+                padding: 0;
+                margin: 0;
+                @media #{$mobile}{
+                    font-size: 3em;
+                }
+            }
+        }
+
+        #menu{
+            margin-top: -56px;
+            background-color: rgba($white, 0.75);
+            @media #{$mobile}{
+                padding: 1%;
+            }
+            height: 56px;
+
+
+            ul{
+                margin: 0;
+                padding: 16px;
+
+                list-style: none;
+
+                text-align: center;
+                @media #{$mobile}{
+                    padding: 2% 0;
+                }
+                li{
+                    display: inline;
+
+                    margin-right: 1%;
+                    margin-left: 1%;
+                    padding: 0;
+
+                    a{
+                        text-decoration: none;
+
+                        padding: 0 1% 1% 16px;
+                        color: #444;
+
+                        transition: 0.2s;
+                        font-size: 20px;
+                        &:hover{
+                            color: $main-color;
+                            border-bottom: solid 2px $main-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .page{
+            padding: 5% 20%;
+            color: $font-color;
+
+            @media #{$mobile}{
+                padding: 4%;
+            }
+            p{
+                text-align: center;
+
+                font-size: 1.2em;
+
+                line-height: 1.5;
+
+            }
+
+            h1{ @include heading(2.4em); }
+
+            h2{ @include heading(2em); }
+
+            h3{ @include heading(1.8em); }
+
+            h4{ @include heading(1.5em); }
+
+            h5{ @include heading(1.3em); }
+
+            h6{ @include heading(1.2em); }
+
+            blockquote{
+                font-style: italic;
+                font-size: 1.4em;
+                text-align: center;
+                color: $dark;
+                padding: 3%;
+                background-color: lighten($light, 2);
+            }
+
+            .button-wrapper{ @include special; }
+
+
+            pre{
+                font-size: 1.2em;
+            }
+
+            img{
+                display: block;
+                width: 100%;
+                padding: 1%;
+                margin: auto;
+
+                &:hover{
+                    box-shadow: 0px 2px 6px $shadow;
+                }
+            }
+            table{
+                overflow: hidden;
+
+                width: auto;
+                text-align: center;
+                border-collapse: collapse;
+                margin: 4% auto;
+
+                thead{
+                    th{
+                        padding: 0.3em 3em;
+
+                        border-left: 0px solid;
+                        border-bottom: 2px solid $main-color;
+
+                        font-size: 1.4em;
+                        font-weight: normal;
+                        @media #{$mobile}{
+                            padding: 2% 0;
+                        }
+                    }
+                }
+
+                tr{
+                    padding: 1%;
+
+                    td{
+                        padding: 0.2em 2em;
+
+                        border-bottom: 1px solid $grey;
+                    }
+
+
+                }
+                &.feature-list{
+                    width: 100%;
+                    tbody{
+                        tr{
+                            td{
+                                border: none;
+                                padding: 2% 0;
+
+                                img{
+                                    text-align: left;
+                                    border: 0 !important;
+                                    padding: 0 !important;
+                                    width: auto;
+
+                                    &:hover{ box-shadow: none; }
+                                }
+
+                                h1{
+                                    font-size: 2em;
+                                }
+
+                                p{
+                                    text-indent: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .asciicast{
+                text-align: center;
+                padding: 10px !important;
+                margin: 10px !important;
+                iframe{
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+                    padding: 10px;
+                    margin: 10px;
+                }
+            }
+        }
+
+        .footer{
+            padding: 1% 0%;
+
+            text-align: center;
+
+            color: $white;
+            background: linear-gradient(to left, $pink, $main-color);
+            font-size: 0.8em;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+            h1{
+                font-size: 1.3em;
+                font-weight: normal;
+            }
+
+            p{
+                color: $light;
+                margin: 0;
+            }
+        }
+
+
+        &#blog{
+            background: linear-gradient(to left, $pink, $main-color);
+
+            .header{
+                height: 70%;
+                background: none;
+                img{
+                    margin-top: 4%;
+                    @media #{$mobile}{
+                        margin-top: 10%;
+                    }
+                }
+                h1{
+                    @media #{$mobile}{
+                        font-size: 8em;
+                        margin-top: -10%;
+                    }
+                }
+                h2{
+                    @media #{$mobile}{
+                        font-size: 2em;
+                        margin-top: -3%;
+                    }
+                }
+            }
+
+            .page{
+                .article{
+                    padding: 4% 8%;
+                    margin-bottom: 8%;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 6px;
+                    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+                    h2{
+                        margin: 0;
+                        padding-top: 0;
+                        font-size: 1.4em;
+                        font-style: italic;
+                    }
+                    p{
+                        text-align: justify;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .footer{
+                background: rgba(25, 25, 25, 0.5);
+            }
+        }
+    }
+}
+
+
+// Animations
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  margin-top: 0% !important;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .page {
+  padding-top: 60px;
+}
