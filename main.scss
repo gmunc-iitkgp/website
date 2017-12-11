@@ -295,7 +295,9 @@ html{
                 font-size: 1.2em;
 
                 line-height: 1.5;
-
+                @media #{$mobile} {
+                    font-size: 1em;
+                }
             }
 
             h1{ @include heading(2.4em); }
@@ -352,6 +354,7 @@ html{
                         font-size: 1.4em;
                         font-weight: normal;
                         @media #{$mobile}{
+                            font-size: 1.2em;
                             padding: 2% 0;
                         }
                     }
@@ -415,19 +418,20 @@ html{
                     padding: 8px 16px;
                     transition: 0.3s;
 
-                    font-size: 20px;
+                    font-size: 28px;
                     
-                    border-bottom: 2px solid $white;
+                    border-bottom: 4px solid $white;
 
 
                     &.active{
                         background-color: $white;
-                        border-bottom: 2px solid $main-color;
+                        border-bottom: 4px solid $main-color;
                     }
 
                     &:hover{
                         color: $white;
                         background-color: $main-color;
+                        border-bottom: 4px solid $main-color;
                     }
                 }
             }
