@@ -5,9 +5,6 @@ html {
   font-family: "Lato", "Open Sans", sans;
   font-size: 1.2em;
   height: 100%; }
-  @media (orientation: portrait) {
-    html {
-      font-size: 1.6em; } }
   html body {
     margin: 0px;
     height: 100%; }
@@ -41,7 +38,6 @@ html {
             margin-top: 8%; } }
         @media (orientation: portrait) {
           html body .header h1 {
-            font-size: 300%;
             margin-top: 1%; } }
       html body .header h2 {
         margin: 0;
@@ -58,7 +54,7 @@ html {
             margin-top: 8%; } }
         @media (orientation: portrait) {
           html body .header h2 {
-            font-size: 120%; } }
+            font-size: 200%; } }
     html body #menu {
       margin-top: -56px;
       background-color: rgba(255, 255, 255, 0.75);
