@@ -6,7 +6,7 @@ Created by adiultra for esencia
 // Variables
 
 
-$blue: rgb(28, 162, 237);
+$blue: #3b5998;
 $green: rgb(139, 233, 73);
 $red: rgb(232, 106, 66);
 $yellow: #FFD05D;
@@ -222,7 +222,7 @@ html{
 
         #menu{
             margin-top: -56px;
-            background-color: rgba($white, 0.75);
+            background-color: rgba($white, 0);
 
             height: 40px;
             padding-top: 16px;
@@ -239,15 +239,15 @@ html{
                 text-decoration: none;
 
                 padding: 0 1% 1% 16px;
-                color: #444;
+                color: $white;
 
                 transition: 0.2s;
                 font-size: 20px;
 
                 
                 &:hover{
-                    color: $main-color;
-                    border-bottom: solid 2px $main-color;
+                    color: lighten($main-color, 20%);
+                    border-bottom: solid 2px $white;
                 }
                 @media #{$mobile}{
                     padding: 0 1% 1% 16px;
@@ -261,10 +261,15 @@ html{
                 display: none;
             }
             @media #{$mobile} {
+                background-color: rgba($white, 0);
                 span.icon {
+                    color: $white;
                     display: initial;
                     right: 0;
                     top: 0;
+                    &:hover{
+                        border-bottom: 2px solid $main-color;
+                    }
                 }
                 a {
                     display: none;
@@ -515,7 +520,9 @@ html{
   position: fixed;
   top: 0;
   margin-top: 0% !important;
-  width: 100%
+  width: 100%;
+  background-color: $main-color !important;
+  box-shadow: 0px 5px 10px rgba(#000, 0.3);
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */

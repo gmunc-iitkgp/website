@@ -117,7 +117,7 @@ html {
             font-size: 150%; } }
     html body #menu {
       margin-top: -56px;
-      background-color: rgba(255, 255, 255, 0.75);
+      background-color: rgba(255, 255, 255, 0);
       height: 40px;
       padding-top: 16px;
       text-align: center; }
@@ -127,12 +127,12 @@ html {
         padding: 0;
         text-decoration: none;
         padding: 0 1% 1% 16px;
-        color: #444;
+        color: white;
         transition: 0.2s;
         font-size: 20px; }
         html body #menu a:hover {
-          color: #8B23D3;
-          border-bottom: solid 2px #8B23D3; }
+          color: #b974e8;
+          border-bottom: solid 2px white; }
         @media (orientation: portrait) {
           html body #menu a {
             padding: 0 1% 1% 16px;
@@ -142,12 +142,17 @@ html {
       html body #menu span.icon {
         display: none; }
       @media (orientation: portrait) {
-        html body #menu span.icon {
-          display: initial;
-          right: 0;
-          top: 0; }
-        html body #menu a {
-          display: none; } }
+        html body #menu {
+          background-color: rgba(255, 255, 255, 0); }
+          html body #menu span.icon {
+            color: white;
+            display: initial;
+            right: 0;
+            top: 0; }
+            html body #menu span.icon:hover {
+              border-bottom: 2px solid #8B23D3; }
+          html body #menu a {
+            display: none; } }
     html body .page {
       padding: 5% 20%;
       color: #323028;
@@ -256,7 +261,7 @@ html {
           color: white;
           border-radius: 4px;
           border: none;
-          background-color: #1ca2ed;
+          background-color: #3b5998;
           font-size: 1.2em; }
           @media (orientation: portrait) {
             html body .page .button-wrapper a.blue-button, html body .page .button-wrapper input.blue-button {
@@ -264,7 +269,7 @@ html {
           html body .page .button-wrapper a.blue-button:hover, html body .page .button-wrapper input.blue-button:hover {
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); }
           html body .page .button-wrapper a.blue-button:active, html body .page .button-wrapper input.blue-button:active {
-            background-color: #0c6597; }
+            background-color: #1e2e4f; }
         html body .page .button-wrapper a.red-button, html body .page .button-wrapper input.red-button {
           margin: 2%;
           padding: 2% 3%;
@@ -471,7 +476,9 @@ html {
   position: fixed;
   top: 0;
   margin-top: 0% !important;
-  width: 100%; }
+  width: 100%;
+  background-color: #8B23D3 !important;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .page {
