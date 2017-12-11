@@ -40,7 +40,7 @@ html {
             margin-top: 8%; } }
         @media (orientation: portrait) {
           html body .header h1 {
-            font-size: 200%;
+            font-size: 100%;
             margin-top: 1%; } }
       html body .header h2 {
         margin: 0;
@@ -57,7 +57,7 @@ html {
             margin-top: 8%; } }
         @media (orientation: portrait) {
           html body .header h2 {
-            font-size: 200%; } }
+            font-size: 100%; } }
     html body #menu {
       margin-top: -56px;
       background-color: rgba(255, 255, 255, 0.75);
