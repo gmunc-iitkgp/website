@@ -137,6 +137,8 @@ html{
                 margin: 5%;
                 @media #{$mobile}{
                     margin-top: 10%;
+                    width: 200px;
+                    height: 200px;
                 }
             }
             h1{
@@ -145,6 +147,7 @@ html{
                 padding: 0;
                 font-weight: 900;
                 @media #{$mobile}{
+                    font-size: 300%;
                     margin-top: 1%;
                 }
             }
