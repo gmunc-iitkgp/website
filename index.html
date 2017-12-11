@@ -27,6 +27,23 @@
 </head>
 
 <body>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#regs" onclick="closeNav()">Registration</a></a>
+        <a href="#sched" onclick="closeNav()">Schedule</a></a>
+        <a href="#spons" onclick="closeNav()">Sponsors</a>
+        <a href="#social" onclick="closeNav()">Social</a>
+        <a href="blog.html" onclick="closeNav()">Blog</a>
+      </div>
+
+    </div>
+
 
     <div class="header">
         <img src="images/icon.png" alt="ICON" class="icon" />
@@ -34,24 +51,13 @@
         <h2>IIT Kharagpur 2017</h2>
     </div>
 
-    <div id="menu">
-        <ul>
-            <li>
-                <a href="#regs">Registration</a></a>
-            </li>
-            <li>
-                <a href="#sched">Schedule</a></a>
-            </li>
-            <li>
-                <a href="#spons">Sponsors</a>
-            </li>
-            <li>
-                <a href="#social">Social</a>
-            </li>
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-        </ul>
+    <div id="menu" class="menu">
+        <a href="#regs">Registration</a></a>
+        <a href="#sched">Schedule</a></a>
+        <a href="#spons">Sponsors</a>
+        <a href="#social">Social</a>
+        <a href="blog.html">Blog</a>
+         <span onclick="openNav()" class="icon"> &#9776;</span>
     </div>
 
     <div class="page">

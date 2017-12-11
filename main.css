@@ -7,7 +7,64 @@ html {
   height: 100%; }
   html body {
     margin: 0px;
-    height: 100%; }
+    height: 100%;
+    /* The Overlay (background) */
+    /* Position the content inside the overlay */
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */ }
+    html body .overlay {
+      /* Height & width depends on how you want to reveal the overlay (see JS below) */
+      height: 100%;
+      width: 0;
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      background-color: black;
+      /* Black fallback color */
+      background-color: rgba(0, 0, 0, 0.9);
+      /* Black w/opacity */
+      overflow-x: hidden;
+      /* Disable horizontal scroll */
+      transition: 0.5s;
+      /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+      /* The navigation links inside the overlay */
+      /* When you mouse over the navigation links, change their color */
+      /* Position the close button (top right corner) */ }
+      html body .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        /* Display block instead of inline */
+        transition: 0.3s;
+        /* Transition effects on hover (color) */ }
+      html body .overlay .overlay a:hover, html body .overlay .overlay a:focus {
+        color: #f1f1f1; }
+      html body .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px; }
+    html body .overlay-content {
+      position: relative;
+      top: 25%;
+      /* 25% from the top */
+      width: 100%;
+      /* 100% width */
+      text-align: center;
+      /* Centered text/links */
+      margin-top: 30px;
+      /* 30px top margin to avoid conflict with the close button on smaller screens */ }
+    @media screen and (max-height: 450px) {
+      html body .overlay a {
+        font-size: 20px; }
+      html body .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px; } }
     html body .header {
       height: 100%;
       text-align: center;
@@ -61,32 +118,36 @@ html {
     html body #menu {
       margin-top: -56px;
       background-color: rgba(255, 255, 255, 0.75);
-      height: 56px; }
-      @media (orientation: portrait) {
-        html body #menu {
-          padding: 1%; } }
-      html body #menu ul {
-        margin: 0;
-        padding: 16px;
-        list-style: none;
-        text-align: center; }
+      height: 40px;
+      padding-top: 16px;
+      text-align: center; }
+      html body #menu a {
+        margin-right: 1%;
+        margin-left: 1%;
+        padding: 0;
+        text-decoration: none;
+        padding: 0 1% 1% 16px;
+        color: #444;
+        transition: 0.2s;
+        font-size: 20px; }
+        html body #menu a:hover {
+          color: #8B23D3;
+          border-bottom: solid 2px #8B23D3; }
         @media (orientation: portrait) {
-          html body #menu ul {
-            padding: 2% 0; } }
-        html body #menu ul li {
-          display: inline;
-          margin-right: 1%;
-          margin-left: 1%;
-          padding: 0; }
-          html body #menu ul li a {
-            text-decoration: none;
+          html body #menu a {
             padding: 0 1% 1% 16px;
-            color: #444;
-            transition: 0.2s;
-            font-size: 20px; }
-            html body #menu ul li a:hover {
-              color: #8B23D3;
-              border-bottom: solid 2px #8B23D3; }
+            display: none; }
+            html body #menu a.icon {
+              display: block; } }
+      html body #menu span.icon {
+        display: none; }
+      @media (orientation: portrait) {
+        html body #menu span.icon {
+          display: initial;
+          right: 0;
+          top: 0; }
+        html body #menu a {
+          display: none; } }
     html body .page {
       padding: 5% 20%;
       color: #323028;
