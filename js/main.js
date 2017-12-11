@@ -18,7 +18,7 @@ function openDay(evt, dayName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(dayName).style.display = "block";
+    document.getElementById(dayName).style.display = "grid";
     evt.currentTarget.className += " active";
 }
 function openNav() {
