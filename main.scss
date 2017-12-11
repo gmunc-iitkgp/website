@@ -130,7 +130,8 @@ html{
             background-color: rgb(0,0,0); /* Black fallback color */
             background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
             overflow-x: hidden; /* Disable horizontal scroll */
-            transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+            transition: 0.5s; /* 0.5 second transition effect to slide in or 
+                                slide down the overlay (height or width, depending on reveal) */
             /* The navigation links inside the overlay */
             a {
                 padding: 8px;
@@ -161,11 +162,13 @@ html{
             top: 25%; /* 25% from the top */
             width: 100%; /* 100% width */
             text-align: center; /* Centered text/links */
-            margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+            margin-top: 30px; /* 30px top margin to avoid conflict with the 
+                                    close button on smaller screens */
         }
 
 
-        /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+        /* When the height of the screen is less than 450 pixels,
+        change the font-size of the links and position the close button again, so they don't overlap */
         @media screen and (max-height: 450px) {
             .overlay a {font-size: 20px}
             .overlay .closebtn {
@@ -283,6 +286,7 @@ html{
 
             @media #{$mobile}{
                 padding: 4%;
+                font-size: 1em;
             }
             p{
                 text-align: center;
@@ -525,7 +529,11 @@ html{
   box-shadow: 0px 5px 10px rgba(#000, 0.3);
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* Add some top padding to the page content to prevent sudden quick movement
+(as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .page {
   padding-top: 60px;
+  br{
+    margin-bottom: 20px;
+  }
 }
