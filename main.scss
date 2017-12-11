@@ -75,6 +75,7 @@ $desktop: "(orientation: landscape)";
     text-align: center;
     @media #{$mobile}{
         margin-top: 8%;
+        font-size: 0.9*$size;
     }
 }
 
