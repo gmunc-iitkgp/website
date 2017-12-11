@@ -272,8 +272,6 @@ html{
 
                 thead{
                     th{
-                        padding: 0.3em 3em;
-
                         border-left: 0px solid;
                         border-bottom: 2px solid $main-color;
 
@@ -286,7 +284,7 @@ html{
                 }
 
                 tr{
-                    padding: 1%;
+                    padding: 2%;
 
                     td{
                         padding: 0.2em 2em;
@@ -326,15 +324,46 @@ html{
                 }
             }
 
-            .asciicast{
+             /* Style the tab */
+            div.tab {
+                overflow: hidden;
                 text-align: center;
-                padding: 10px !important;
-                margin: 10px !important;
-                iframe{
-                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-                    padding: 10px;
-                    margin: 10px;
+
+                border: solid 1px $grey;
+
+                button {
+
+                    background-color: #fff;
+
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 8px 16px;
+                    transition: 0.3s;
+
+                    font-size: 20px;
+                    
+                    border-bottom: 2px solid $white;
+
+
+                    &.active{
+                        background-color: $white;
+                        border-bottom: 2px solid $main-color;
+                    }
+
+                    &:hover{
+                        color: $white;
+                        background-color: $main-color;
+                    }
                 }
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border: 1px solid $grey;
+                border-top: none;
             }
         }
 

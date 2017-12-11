@@ -9,6 +9,8 @@
     <title>GMUNC IIT KGP 2017</title>
 
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 
@@ -35,6 +37,9 @@
     <div id="menu">
         <ul>
             <li>
+                <a href="#regs">Registration</a></a>
+            </li>
+            <li>
                 <a href="#sched">Schedule</a></a>
             </li>
             <li>
@@ -54,6 +59,19 @@
         <h2>Come be the part of the Glory</h2>
         <br />
 
+        <br id="regs" />
+
+        <h2>Registration</h2>
+
+        <p>
+            For registration follow the links given below:
+        </p>
+
+        <div class="button-wrapper">
+            <a href="" class="main-button">Campus Ambassador</a> <a href="" class="main-button">Delegates</a>    
+        </div>
+
+
         <br id="sched" />
 
         <h2>Schedule</h2>
@@ -62,40 +80,58 @@
         </p>
         <br />
 
-        <h3>Day 1</h3>
+        <div class="tab">
+            <button class="tablinks" onclick="openDay(event, 'day1')">Day 1</button>
+            <button class="tablinks" onclick="openDay(event, 'day2')">Day 2</button>
+            <button class="tablinks" onclick="openDay(event, 'day3')">Day 3</button>
+        </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>Events</th>
-                    <th>Venue</th>
-                </tr>
-            </thead>
+        <div id="day1" class="tabcontent">
+            <h3>Day 1</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Events</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
 
 
-            <tbody>
-                <tr>
-                    <td>5 : 30</td>
-                    <td>Event 1</td>
-                    <td>V1</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>5 : 30</td>
+                        <td>Event 1</td>
+                        <td>V1</td>
+                    </tr>
 
-                <tr>
-                    <td>6 : 30</td>
-                    <td>Event 2</td>
-                    <td>V2</td>
-                </tr>
+                    <tr>
+                        <td>6 : 30</td>
+                        <td>Event 2</td>
+                        <td>V2</td>
+                    </tr>
 
-                <tr>
-                    <td>7 : 30</td>
-                    <td>Event 3</td>
-                    <td>V3</td>
-                </tr>
-            </tbody>
+                    <tr>
+                        <td>7 : 30</td>
+                        <td>Event 3</td>
+                        <td>V3</td>
+                    </tr>
+                </tbody>
 
-        </table>
-        
+            </table>
+        </div>
+
+        <div id="day2" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="day3" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div> 
+
         <br id="spons" />
 
         <h1>Sponsors</h1>

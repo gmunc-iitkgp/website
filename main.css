@@ -89,7 +89,9 @@ html {
               border-bottom: solid 2px #8B23D3; }
     html body .page {
       padding: 5% 20%;
-      color: #323028; }
+      color: #323028;
+      /* Style the tab */
+      /* Style the tab content */ }
       @media (orientation: portrait) {
         html body .page {
           padding: 4%; } }
@@ -193,7 +195,7 @@ html {
           color: white;
           border-radius: 4px;
           border: none;
-          background-color: #4267B2;
+          background-color: #1ca2ed;
           font-size: 1.2em; }
           @media (orientation: portrait) {
             html body .page .button-wrapper a.blue-button, html body .page .button-wrapper input.blue-button {
@@ -201,7 +203,7 @@ html {
           html body .page .button-wrapper a.blue-button:hover, html body .page .button-wrapper input.blue-button:hover {
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); }
           html body .page .button-wrapper a.blue-button:active, html body .page .button-wrapper input.blue-button:active {
-            background-color: #263c68; }
+            background-color: #0c6597; }
         html body .page .button-wrapper a.red-button, html body .page .button-wrapper input.red-button {
           margin: 2%;
           padding: 2% 3%;
@@ -303,7 +305,6 @@ html {
         border-collapse: collapse;
         margin: 4% auto; }
         html body .page table thead th {
-          padding: 0.3em 3em;
           border-left: 0px solid;
           border-bottom: 2px solid #8B23D3;
           font-size: 1.4em;
@@ -312,7 +313,7 @@ html {
             html body .page table thead th {
               padding: 2% 0; } }
         html body .page table tr {
-          padding: 1%; }
+          padding: 2%; }
           html body .page table tr td {
             padding: 0.2em 2em;
             border-bottom: 1px solid #afafaf; }
@@ -332,14 +333,30 @@ html {
               font-size: 2em; }
             html body .page table.feature-list tbody tr td p {
               text-indent: 0; }
-      html body .page .asciicast {
+      html body .page div.tab {
+        overflow: hidden;
         text-align: center;
-        padding: 10px !important;
-        margin: 10px !important; }
-        html body .page .asciicast iframe {
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-          padding: 10px;
-          margin: 10px; }
+        border: solid 1px #afafaf; }
+        html body .page div.tab button {
+          background-color: #fff;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 8px 16px;
+          transition: 0.3s;
+          font-size: 20px;
+          border-bottom: 2px solid white; }
+          html body .page div.tab button.active {
+            background-color: white;
+            border-bottom: 2px solid #8B23D3; }
+          html body .page div.tab button:hover {
+            color: white;
+            background-color: #8B23D3; }
+      html body .page .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #afafaf;
+        border-top: none; }
     html body .footer {
       padding: 1% 0%;
       text-align: center;
