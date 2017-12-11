@@ -445,18 +445,37 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11"
-     inkscape:cx="37.446007"
-     inkscape:cy="32.667474"
+     inkscape:zoom="5.5"
+     inkscape:cx="39.851221"
+     inkscape:cy="20.083368"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
-     inkscape:window-width="1600"
-     inkscape:window-height="845"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="795"
+     inkscape:window-height="428"
+     inkscape:window-x="649"
+     inkscape:window-y="214"
+     inkscape:window-maximized="0"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4400"
+       empspacing="4" />
+  </sodipodi:namedview>
   <metadata
      id="metadata4157">
     <rdf:RDF>
@@ -474,10 +493,11 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer">
     <path
-       style="fill:#ffe400;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 20.363636,37.909091 c 0,0 5.818182,5.090909 9.272727,4.909091 3.454546,-0.181818 9,1.090909 15.272728,-4.818182 6.272727,-5.90909 0.272727,-4.727272 0.272727,-4.727272 l -16.545455,-0.181818 0.09091,-14.363637 -1,-0.363636 0.818181,-2.090909 -5.363636,0 1.181818,2.181818 -1,0.181818 0.09091,7.272727 -3.090909,-0.181818 -0.09091,1.181818 1.545455,0.181819 0,0.90909 -1.545455,-0.09091 0.09091,1 1.272727,-0.181818 -0.09091,0.727273 -1.363636,0.09091 0.09091,0.818182 1.545455,-0.09091 -0.09091,0.818182 -1.363637,-0.09091 -0.09091,1.181819 1.454546,-0.272728 0,0.727273 -1.454546,0 0,1 1.545455,-0.363636 -0.09091,1.454545 -1.09091,-0.272727 -0.363636,1 1.636364,0 -0.181818,1 -1.545453,-0.09091 z"
+       style="fill:#ffe400;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 22,40 c 2,2 6,3 10,3 2,0 9,-1 12.909091,-5 C 49.424411,33.379673 45,33 45,33 l -16,0 0,-14 -1,-1 1,-2 -6,0 1,2 -1,1 0,7 -3,0 0,1 2,0 0,1 -2,0 0,1 2,0 0,1 -2,0 0,1 2,0 0,1 -2,0 0,1 2,0 0,1 -2,0 0,1 2,0 0,1 -2,0 c 0,0 0,2 2,4 z"
        id="path4813"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssccccccccccccccccccccccccccccccs" />
     <path
        sodipodi:type="star"
        style="fill:#ffe400;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
