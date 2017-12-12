@@ -1,0 +1,77 @@
+$pink: #F06C6C;
+$main-color: #8B23D3;
+
+// Media Queries
+
+$mobile: "(orientation: portrait)";
+$desktop: "(orientation: landscape)";
+
+#blog{
+    background: linear-gradient(to left, $pink, $main-color);
+
+    .header{
+        height: 70%;
+        background: none;
+
+        @media #{$mobile} {
+            height: 50%;
+        }
+        img{
+            margin-top: 4%;
+            @media #{$mobile}{
+                margin-top: 10%;
+            }
+        }
+        h1{
+            @media #{$mobile}{
+                font-size: 8em;
+            }
+        }
+        h2{
+            @media #{$mobile}{
+                font-size: 2em;
+            }
+        }
+    }
+
+    .page{
+
+        .article{
+            padding: 4% 8%;
+            margin-bottom: 8%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 6px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            h2{
+                margin: 0;
+                padding-top: 0;
+                font-size: 1.4em;
+                font-style: italic;
+            }
+            p{
+                text-align: justify;
+                font-weight: 300;
+            }
+            &#fb {
+                text-align: center;
+                .iframeFB {
+                    @media #{mobile} {
+                        padding: 20% 0;
+                    }
+                }
+                iframe {
+                    @media #{$mobile} {
+                       transform: scale(1.5);
+                    }
+                }
+            }
+        }
+        @media #{$mobile} {
+            padding: 4% 2%;
+        }
+    }
+
+    .footer{
+        background: rgba(25, 25, 25, 0.5);
+    }
+}
