@@ -54,12 +54,13 @@ $desktop: "(orientation: landscape)";
             }
             &#fb {
                 text-align: center;
-                .iframeFB {
-                    @media #{mobile} {
+                
+                #iframeFB {
+                    @media #{$mobile} {
                         padding: 30% 0;
-                        margin: 30% 0;
                     }
                 }
+                
                 iframe {
                     @media #{$mobile} {
                        transform: scale(1.5);
