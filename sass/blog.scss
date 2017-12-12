@@ -28,6 +28,9 @@ $desktop: "(orientation: landscape)";
             font-size: 120%;
             color: white;
             text-decoration: none;
+            @media #{$mobile} {
+                font-size: 200%;    
+            }
         }
     }
 
@@ -76,7 +79,7 @@ $desktop: "(orientation: landscape)";
                 @media #{$mobile} {
                     font-size: 1.6em;
                 }
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 900px) {
                     font-size: 1.2em;
                 }
             }
