@@ -6,7 +6,8 @@ Created by adiultra for esencia
 // Variables
 
 
-$blue: #3b5998;
+$fb-blue: #3b5998;
+$twtr-blue: #1DA1F3;
 $green: rgb(139, 233, 73);
 $red: rgb(232, 106, 66);
 $yellow: #FFD05D;
@@ -88,8 +89,6 @@ $desktop: "(orientation: landscape)";
     a, input{
         &.main-button{ @include button($main-color); };
 
-        &.blue-button{ @include button($blue); };
-
         &.red-button{ @include button($red); };
 
         &.green-button{ @include button($green); };
@@ -99,6 +98,10 @@ $desktop: "(orientation: landscape)";
         &.black-button{ @include button($dark-grey); };
 
         &.rtfd-button{@include button($rtfd);}
+
+        &.fb-button{ @include button($fb-blue); };
+
+        &.twtr-button{ @include button($twtr-blue); };
     }
 }
 
