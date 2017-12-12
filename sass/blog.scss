@@ -57,13 +57,13 @@ $desktop: "(orientation: landscape)";
                 
                 #iframeFB {
                     @media #{$mobile} {
-                        margin: 30% 0;
+                        margin: 25% 0;
                     }
                 }
                 
                 iframe {
                     @media #{$mobile} {
-                       transform: scale(1.5);
+                       transform: scale(1.6);
                     }
                 }
             }
