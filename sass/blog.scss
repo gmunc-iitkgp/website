@@ -29,7 +29,7 @@ $desktop: "(orientation: landscape)";
             color: white;
             text-decoration: none;
             @media #{$mobile} {
-                font-size: 200%;    
+                font-size: 2em;    
             }
         }
     }
@@ -77,10 +77,7 @@ $desktop: "(orientation: landscape)";
                 text-align: justify;
                 font-weight: 300;
                 @media #{$mobile} {
-                    font-size: 1.6em;
-                }
-                @media screen and (max-width: 900px) {
-                    font-size: 1.2em;
+                    font-size: 150%;
                 }
             }
             &#fb {
