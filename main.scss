@@ -524,19 +524,6 @@ html{
                     }
                     &#fb {
                         text-align: center;
-                        iframe {
-                            &#fblap {
-                                @media #{$mobile} {
-                                    display: none;
-                                }
-                            }
-                            &#fbmob {
-                                display: none;
-                                @media #{$mobile} {
-                                    display: initial;
-                                }
-                            }
-                        }
                     }
                 }
                 @media #{$mobile} {
