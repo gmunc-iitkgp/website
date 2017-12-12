@@ -506,6 +506,7 @@ html{
             }
 
             .page{
+
                 .article{
                     padding: 4% 8%;
                     margin-bottom: 8%;
@@ -524,6 +525,11 @@ html{
                     }
                     &#fb {
                         text-align: center;
+                        iframe {
+                            @media #{$mobile} {
+                               transform: scale(1.5);
+                            }
+                        }
                     }
                 }
                 @media #{$mobile} {
