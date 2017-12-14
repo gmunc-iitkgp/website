@@ -1,0 +1,52 @@
+$mobile: "(orientation: portrait)";
+
+html {
+	body {
+		.header {
+			height: 200px;
+			text-align: center;
+			padding: 24px 37%;
+
+			@media #{$mobile} {
+				padding: 24px 0;
+				height: 40%;
+			}
+
+			img {
+				float: inline-start;
+				width: 72px;
+				height: 72px;
+				margin: 0;
+				@media #{$mobile} {
+					float: none;
+				}
+			}
+
+			h1 {
+				font-size: 64px;
+
+			}
+			h2 {
+				font-size: 150%;
+			}
+			.info {
+				padding: 14px 0;
+			}
+		}
+
+		.page {
+			padding: 5% 25%;
+			text-align: justify;
+			@media #{$mobile} {
+				padding: 5%;	
+			}
+			p{
+				font-size: 1em;
+				text-align: justify;
+				@media #{$mobile} {
+					font-size: 0.9em;
+				}
+			}
+		}
+	}
+}
