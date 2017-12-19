@@ -445,6 +445,9 @@ html{
                 }
                 ul{
                     padding: 0 100px 0 100px;
+                    @media #{$mobile} {
+                        padding: 0 20px;
+                    }
                 }
             }
 
