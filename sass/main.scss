@@ -124,7 +124,7 @@ html{
 
         /* The Overlay (background) */
         .overlay {
-            /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+            /* Height & width depends on how you want to reveal the overlay (see JS below) */
             height: 100%;
             width: 0;
             position: fixed; /* Stay in place */
@@ -134,7 +134,7 @@ html{
             background-color: rgb(0,0,0); /* Black fallback color */
             background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
             overflow-x: hidden; /* Disable horizontal scroll */
-            transition: 0.5s; /* 0.5 second transition effect to slide in or 
+            transition: 0.5s; /* 0.5 second transition effect to slide in or
                                 slide down the overlay (height or width, depending on reveal) */
             /* The navigation links inside the overlay */
             a {
@@ -166,7 +166,7 @@ html{
             top: 25%; /* 25% from the top */
             width: 100%; /* 100% width */
             text-align: center; /* Centered text/links */
-            margin-top: 30px; /* 30px top margin to avoid conflict with the 
+            margin-top: 30px; /* 30px top margin to avoid conflict with the
                                     close button on smaller screens */
         }
 
@@ -180,7 +180,7 @@ html{
                 top: 15px;
                 right: 35px;
             }
-        } 
+        }
 
         .header{
             height: 100%;
@@ -194,7 +194,7 @@ html{
 
 
             font-family: $font-display;
-            
+
             img{
                 width: 300px;
                 height: 300px;
@@ -206,19 +206,20 @@ html{
                 }
             }
             h1{
-                @include heading(500%);
+                @include heading(300%);
                 margin: -2% 0 0 0;
                 padding: 0;
                 @media #{$mobile}{
-                    font-size: 72px;
+                    font-size: 48px;
                     margin-top: 1%;
                 }
             }
 
             h2{
-                @include heading(300%);
+                @include heading(250%);
                 padding: 0;
                 margin: 0;
+                margin-top: 20px;
                 @media #{$mobile}{
                     font-size: 150%;
                 }
@@ -234,7 +235,7 @@ html{
 
 
             text-align: center;
-                
+
 
             a{
                 margin-right: 1%;
@@ -249,7 +250,7 @@ html{
                 transition: 0.2s;
                 font-size: 20px;
 
-                
+
                 &:hover{
                     background: linear-gradient(rgba(#fff, 0), rgba($pink, 0.2));
                     border-bottom: solid 2px $pink;
@@ -278,7 +279,7 @@ html{
                 }
                 a {
                     display: none;
-                }                                
+                }
             }
         }
 
@@ -334,10 +335,6 @@ html{
                 width: 100%;
                 padding: 1%;
                 margin: auto;
-
-                &:hover{
-                    box-shadow: 0px 2px 6px $shadow;
-                }
             }
             table{
                 overflow: hidden;
@@ -409,6 +406,22 @@ html{
                 }
             }
 
+            .intro {
+                text-align: center;
+                h1 {
+                    margin-bottom: 0;
+                }
+                h2 {
+                    padding-top: 0;
+                    margin-top: 0;
+                }
+                img {
+                    height: 256px;
+                    width: 256px;
+                    display: inline-block;
+                }
+            }
+
             .panels{
                 text-align: center;
                 .accordion {
@@ -477,7 +490,7 @@ html{
                     transition: 0.3s;
 
                     font-size: 28px;
-                    
+
                     border-bottom: 4px solid $white;
 
                     @media #{$mobile} {
