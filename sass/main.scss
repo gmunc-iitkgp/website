@@ -1,5 +1,5 @@
 /*
-Created by adiultra for esencia
+Created by adiultra for Everyone
 */
 
 
@@ -236,6 +236,7 @@ html{
 
             text-align: center;
 
+            transition-delay: 0.5s;
 
             a{
                 margin-right: 1%;
@@ -252,8 +253,8 @@ html{
 
 
                 &:hover{
-                    background: linear-gradient(rgba(#fff, 0), rgba($pink, 0.2));
-                    border-bottom: solid 2px $pink;
+                    background: linear-gradient(rgba(#fff, 0), rgba($white, 0.2));
+                    border-bottom: solid 2px $white;
                 }
                 @media #{$mobile}{
                     padding: 0 1% 1% 16px;
@@ -564,7 +565,7 @@ html{
   top: 0;
   margin-top: 0% !important;
   width: 100%;
-  background-color: $main-color !important;
+  background-image: linear-gradient(to right, $pink, $violet) !important;
   box-shadow: 0px 5px 10px rgba(#000, 0.3);
 }
 
