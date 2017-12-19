@@ -1,5 +1,9 @@
 $mobile: "(orientation: portrait)";
 
+$violet: #8B23D3;
+$main-color: $violet;
+
+
 html {
 	body {
 		.header {
@@ -39,7 +43,7 @@ html {
 			padding: 5% 25%;
 			text-align: justify;
 			@media #{$mobile} {
-				padding: 5%;	
+				padding: 5%;
 			}
 			p{
 				font-size: 1em;
@@ -48,6 +52,52 @@ html {
 					font-size: 0.9em;
 				}
 			}
+            .panels{
+                text-align: center;
+                .accordion {
+                    max-width: 600px;
+                    background-color: #eee;
+                    color: #444;
+                    cursor: pointer;
+                    padding: 18px;
+                    width: 100%;
+                    text-align: left;
+                    border: none;
+                    outline: none;
+                    transition: 0.4s;
+                    border-bottom: 2px rgba($main-color, 0) solid;
+                    font-size: 1.6em;
+                    &:hover {
+                        border-bottom: 2px $main-color solid;
+                        background-color: #ccc;
+                    }
+
+                    .active {
+                        background-color: #ccc;
+                    }
+                    i {
+                        float: right;
+                    }
+                }
+
+                .panel {
+                    padding: 0 18px;
+                    background-color: white;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                }
+
+                p{
+                    text-align: justify;
+                    width: 100%;
+                    max-width: 540px;
+                    margin: auto;
+                    padding: 2% 0;
+                    font-size: 0.9em;
+                }
+            }
+
 		}
 	}
 }

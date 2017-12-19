@@ -1,0 +1,23 @@
+
+.icon-heart:before { content: '\e800'; } /* '' */
+.icon-calendar:before { content: '\e801'; } /* '' */
+.icon-chat:before { content: '\e802'; } /* '' */
+.icon-star:before { content: '\e803'; } /* '' */
+.icon-menu:before { content: '\e804'; } /* '' */
+.icon-user:before { content: '\e805'; } /* '' */
+.icon-users:before { content: '\e806'; } /* '' */
+.icon-warn:before { content: '\e807'; } /* '' */
+.icon-phone:before { content: '\e808'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-github:before { content: '\f09b'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
+.icon-mail:before { content: '\f0e0'; } /* '' */
+.icon-download:before { content: '\f0ed'; } /* '' */
+.icon-plus:before { content: '\f0fe'; } /* '' */
+.icon-code:before { content: '\f121'; } /* '' */
+.icon-pencil:before { content: '\f14b'; } /* '' */
+.icon-doc:before { content: '\f15c'; } /* '' */
+.icon-grad:before { content: '\f19d'; } /* '' */
+.icon-map:before { content: '\f278'; } /* '' */
+.icon-handshake:before { content: '\f2b5'; } /* '' */
+.icon-facebook:before { content: '\f308'; } /* '' */
