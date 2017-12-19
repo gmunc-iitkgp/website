@@ -210,7 +210,7 @@ html{
                 margin: -2% 0 0 0;
                 padding: 0;
                 @media #{$mobile}{
-                    font-size: 48px;
+                    font-size: 36px;
                     margin-top: 1%;
                 }
             }
@@ -419,6 +419,10 @@ html{
                     height: 256px;
                     width: 256px;
                     display: inline-block;
+                    @media #{$mobile} {
+                        height: 128px;
+                        width: 128px;
+                    }
                 }
             }
 
