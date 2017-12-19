@@ -500,6 +500,15 @@ html{
             .icon-handshake{
                 font-size: 5em;
             }
+
+            #social-buttons {
+                a {
+                    @media #{$mobile} {
+                        display: block;
+                        margin: 2% 20%;
+                    }
+                }
+            }
         }
 
         .footer{
