@@ -434,7 +434,7 @@ html{
                 background-color: rgba($light, 0.5);
                 border-radius: 10px;
                 @media #{$mobile} {
-                    margin: 0 10% 0 10%;
+                    margin: 0 8%;
                 }
                 h1{
                     color: $main-color;
@@ -446,7 +446,7 @@ html{
                 ul{
                     padding: 0 100px 0 100px;
                     @media #{$mobile} {
-                        padding: 0 20px;
+                        padding: 0 40px;
                     }
                 }
             }
