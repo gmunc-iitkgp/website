@@ -9,6 +9,7 @@ Created by adiultra for Everyone
 $fb-blue: #3b5998;
 $twtr-blue: #1DA1F3;
 $green: rgb(139, 233, 73);
+$insta-red: #cd486b;
 $red: rgb(232, 106, 66);
 $yellow: #FFD05D;
 $pink: #F06C6C;
@@ -42,7 +43,7 @@ $desktop: "(orientation: landscape)";
 
 @mixin button($color) {
     margin: 2%;
-    padding: 2% 3%;
+    padding: 1% 2%;
 
     transition: all 0.2s;
     text-decoration: none;
@@ -86,10 +87,14 @@ $desktop: "(orientation: landscape)";
     text-align: center;
     line-height: 3em;
 
+    hyphens: none;
     a, input{
+        display: inline-block;
         &.main-button{ @include button($main-color); };
 
         &.red-button{ @include button($red); };
+
+        &.insta-button{ @include button($insta-red); };
 
         &.green-button{ @include button($green); };
 

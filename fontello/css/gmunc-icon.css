@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'gmunc-icon';
-  src: url('../font/gmunc-icon.eot?35738401');
-  src: url('../font/gmunc-icon.eot?35738401#iefix') format('embedded-opentype'),
-       url('../font/gmunc-icon.woff2?35738401') format('woff2'),
-       url('../font/gmunc-icon.woff?35738401') format('woff'),
-       url('../font/gmunc-icon.ttf?35738401') format('truetype'),
-       url('../font/gmunc-icon.svg?35738401#gmunc-icon') format('svg');
+  src: url('../font/gmunc-icon.eot?99497167');
+  src: url('../font/gmunc-icon.eot?99497167#iefix') format('embedded-opentype'),
+       url('../font/gmunc-icon.woff2?99497167') format('woff2'),
+       url('../font/gmunc-icon.woff?99497167') format('woff'),
+       url('../font/gmunc-icon.ttf?99497167') format('truetype'),
+       url('../font/gmunc-icon.svg?99497167#gmunc-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'gmunc-icon';
-    src: url('../font/gmunc-icon.svg?35738401#gmunc-icon') format('svg');
+    src: url('../font/gmunc-icon.svg?99497167#gmunc-icon') format('svg');
   }
 }
 */
@@ -73,6 +73,7 @@
 .icon-code:before { content: '\f121'; } /* '' */
 .icon-pencil:before { content: '\f14b'; } /* '' */
 .icon-doc:before { content: '\f15c'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-grad:before { content: '\f19d'; } /* '' */
 .icon-map:before { content: '\f278'; } /* '' */
 .icon-handshake:before { content: '\f2b5'; } /* '' */
