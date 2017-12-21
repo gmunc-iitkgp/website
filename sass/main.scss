@@ -29,7 +29,7 @@ $shadow: rgba(0, 0, 0, 0.25);
 $shadow-dark: rgba(0, 0, 0, 0.5);
 
 $font-sans: "Lato", "Open Sans", sans;
-$font-display: "Ovo", serif;
+$font-display: "Cinzel", serif;
 $font-color: $dark-grey;
 
 // Media Queries
@@ -206,7 +206,7 @@ html{
                 }
             }
             h1{
-                @include heading(300%);
+                @include heading(270%);
                 margin: 1% 0;
                 padding: 0;
                 @media #{$mobile}{
@@ -216,7 +216,7 @@ html{
             }
 
             h2{
-                @include heading(250%);
+                @include heading(200%);
                 padding: 0;
                 margin: 0;
                 margin-top: 20px;
