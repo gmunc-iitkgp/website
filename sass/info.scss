@@ -7,7 +7,7 @@ $main-color: $violet;
 html {
 	body {
 		.header {
-			height: 200px;
+			height: 30%;
 			text-align: center;
 			padding: 24px 37%;
 
@@ -17,7 +17,6 @@ html {
 			}
 
 			img {
-				float: inline-start;
 				width: 72px;
 				height: 72px;
 				margin: 0;
@@ -88,13 +87,18 @@ html {
                     transition: max-height 0.2s ease-out;
                 }
 
-                p{
+
+                p, ol{
                     text-align: justify;
                     width: 100%;
                     max-width: 540px;
                     margin: auto;
                     padding: 2% 0;
                     font-size: 0.9em;
+                }
+
+                ol {
+                    padding: 2%;
                 }
             }
 
