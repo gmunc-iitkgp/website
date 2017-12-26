@@ -517,7 +517,8 @@ html{
                     }
                     @media #{$mobile} {
                         display: block;
-                        margin: 2% 20%;
+                        font-size: 1.5em;
+                        margin: 2% 16%;
                     }
                 }
             }
