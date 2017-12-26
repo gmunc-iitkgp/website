@@ -510,6 +510,11 @@ html{
 
             #social-buttons {
                 a {
+                    i {
+                        vertical-align: bottom;
+                        font-size: 1.6em;
+                        margin-right: 4px;
+                    }
                     @media #{$mobile} {
                         display: block;
                         margin: 2% 20%;
