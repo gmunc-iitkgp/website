@@ -26,7 +26,7 @@ html {
 			}
 
 			h1 {
-				font-size: 64px;
+				font-size: 56px;
 
 			}
 			h2 {
@@ -36,6 +36,18 @@ html {
 			.info {
 				padding: 14px 0;
 			}
+
+			@media screen and (max-width: 1499px) and (orientation: landscape) {
+                img {
+                    margin: 0;
+                }
+                h1 {
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 100%;
+                }
+            }
 		}
 
 		.page {
