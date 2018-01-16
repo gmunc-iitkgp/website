@@ -29,7 +29,7 @@ $desktop: "(orientation: landscape)";
             color: white;
             text-decoration: none;
             @media #{$mobile} {
-                font-size: 2em;    
+                font-size: 2em;
             }
         }
     }
@@ -82,7 +82,7 @@ $desktop: "(orientation: landscape)";
             }
             &#fb {
                 text-align: center;
-                
+
                 #iframeFB {
                     margin: 20% 0;
 
@@ -90,12 +90,12 @@ $desktop: "(orientation: landscape)";
                         margin: 25% 0;
                     }
                 }
-                
+
                 iframe {
                     transform: scale(1.4);
 
                     @media #{$mobile} {
-                       transform: scale(1.6);
+                       transform: scale(1);
                     }
                 }
             }
