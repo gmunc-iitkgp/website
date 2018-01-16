@@ -233,6 +233,31 @@ html{
                     font-size: 150%;
                 }
             }
+
+            @media screen and (max-width: 1499px) and (orientation: landscape) {
+                img {
+                    margin: 4%;
+                }
+                h1 {
+                    font-size: 2em;
+                }
+                h2 {
+                    font-size: 1.7em;
+                }
+            }
+            @media screen and (max-width: 1199px) and (orientation: landscape) {
+                img {
+                    width: 250px;
+                    height: 250px;
+                    margin: 4%;
+                }
+                h1 {
+                    font-size: 1.6em;
+                }
+                h2 {
+                    font-size: 1.4em;
+                }
+            }
         }
 
         #menubar{
