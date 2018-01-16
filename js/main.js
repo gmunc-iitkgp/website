@@ -27,9 +27,10 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
-window.sr = ScrollReveal();
-sr.reveal('.icon');
-sr.reveal('.menu');
+window.sr = ScrollReveal({ duration: 1000 });
+sr.reveal('.header');
+sr.reveal('.icon', {delay: 500});
+sr.reveal('.menu', {delay: 1000});
 sr.reveal('.intro');
 sr.reveal('.announcement');
 sr.reveal('.image-box');
