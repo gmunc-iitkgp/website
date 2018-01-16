@@ -27,3 +27,10 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+window.sr = ScrollReveal();
+sr.reveal('.icon');
+sr.reveal('.menu');
+sr.reveal('.intro');
+sr.reveal('.announcement');
+sr.reveal('.image-box');
+sr.reveal('.button-wrapper');
