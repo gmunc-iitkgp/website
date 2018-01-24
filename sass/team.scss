@@ -1,0 +1,67 @@
+$pink: #F06C6C;
+$main-color: #8B23D3;
+$card-width: 400px;
+
+// Media Queries
+
+$mobile: "(orientation: portrait)";
+$desktop: "(orientation: landscape)";
+
+#team{
+    background: linear-gradient(to left, $pink, $main-color);
+
+    .header{
+        background: none;
+        img{
+            margin-top: 4%;
+            @media #{$mobile}{
+                margin-top: 10%;
+            }
+        }
+        h1{
+            @media #{$mobile}{
+                font-size: 5em;
+            }
+        }
+        
+    }
+
+    .page{
+        max-width: 1240px;
+        margin: 0 auto;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+
+
+        @media #{$mobile} {
+            grid-template-columns: 1fr 1fr;
+        }
+        .card{
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            img {
+                padding: 0;
+                border-radius: 10px;
+                max-width: $card-width;
+                margin-bottom: 4%;
+            }
+            h1 {
+                font-size: 1.4em;
+            }
+            h2 {
+                font-size: 1em;
+                margin-top: 0;
+                margin-bottom: 4%;
+            }
+        }
+    }
+
+    .footer{
+        background: rgba(25, 25, 25, 0.5);
+    }
+}

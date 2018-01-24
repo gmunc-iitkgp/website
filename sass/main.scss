@@ -135,7 +135,7 @@ html{
             height: 100%;
             width: 0;
             position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
+            z-index: 100; /* Sit on top */
             left: 0;
             top: 0;
             background-color: rgb(0,0,0); /* Black fallback color */
@@ -202,7 +202,7 @@ html{
 
             font-family: $font-display;
 
-            z-index: 100;
+            z-index: 10;
 
             img{
                 width: 300px;
@@ -270,7 +270,7 @@ html{
 
             text-align: center;
 
-            z-index: 100;
+            z-index: 15;
             a{
                 margin-right: 12px;
                 margin-left: 12px;
@@ -460,11 +460,12 @@ html{
             }
 
             .announcement {
-                margin: 0 20% 0 20%;
+                margin: 5% 22%;
+                padding-top: 40px;
                 color: $dark-grey;
-                border: 1px $main-color solid;
-                background-color: rgba($light, 0.5);
+                box-shadow: 0px 0px 10px $shadow;
                 border-radius: 10px;
+                min-height: 400px;
                 @media #{$mobile} {
                     margin: 0 8%;
                 }
@@ -548,9 +549,10 @@ html{
                     display: inline;
                     width: 25%;
                     padding: 0;
-                    margin-top: 2%;
+                    margin: 2% 2%;
+                    box-shadow: 0px 4px 8px $shadow;
                     &:hover {
-                        box-shadow: 0px 4px 8px $shadow;
+                        box-shadow: 0px 5px 16px $shadow-dark;
                     }
                     @media #{$mobile}{
                         width: 45%;
@@ -592,6 +594,9 @@ html{
             p{
                 color: $light;
                 margin: 0;
+                &#copyright {
+                    font-size: 0.8em;
+                }
             }
             .icon-github {
                 color: $white;
