@@ -23,10 +23,14 @@ $desktop: "(orientation: landscape)";
                 font-size: 5em;
             }
         }
-        
+
     }
 
-    .page{
+    .page {
+        //
+    }
+
+    .card-group{
         max-width: 1240px;
         margin: 0 auto;
 
@@ -44,19 +48,24 @@ $desktop: "(orientation: landscape)";
             background: #fff;
             border-radius: 10px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            padding: 0 0 4% 0%;
             img {
                 padding: 0;
                 border-radius: 10px;
                 max-width: $card-width;
                 margin-bottom: 4%;
             }
+
             h1 {
                 font-size: 1.4em;
             }
+
             h2 {
                 font-size: 1em;
-                margin-top: 0;
-                margin-bottom: 4%;
+            }
+
+            h3 {
+                font-size: 0.8em;
             }
         }
     }
