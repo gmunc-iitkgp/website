@@ -1,5 +1,4 @@
 @import "main";
-$card-width: 400px;
 
 // Media Queries
 
@@ -109,13 +108,13 @@ $desktop: "(orientation: landscape)";
 
             display: grid;
 
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             grid-gap: 20px;
 
 
             @media #{$mobile} {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
             .card{
                 background: #fff;
@@ -126,7 +125,6 @@ $desktop: "(orientation: landscape)";
                 img {
                     padding: 0;
                     border-radius: 10px;
-                    max-width: $card-width;
                     margin-bottom: 4%;
                 }
 
