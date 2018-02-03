@@ -271,6 +271,19 @@ html{
                     font-size: 1.4em;
                 }
             }
+            @media screen and (max-height: 300px) and (orientation: landscape) {
+                img {
+                    width: 150px;
+                    height: 150px;
+                    margin: 4%;
+                }
+                h1 {
+                    font-size: 1.6em;
+                }
+                h2 {
+                    font-size: 1.4em;
+                }
+            }
         }
 
         #menubar{
