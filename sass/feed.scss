@@ -1,12 +1,12 @@
-$pink: #F06C6C;
-$main-color: #8B23D3;
+@import "main";
+$card-width: 400px;
 
 // Media Queries
 
 $mobile: "(orientation: portrait)";
 $desktop: "(orientation: landscape)";
 
-#blog{
+#feed{
     background: linear-gradient(to left, $pink, $main-color);
 
     .back-button {
@@ -103,7 +103,75 @@ $desktop: "(orientation: landscape)";
         @media #{$mobile} {
             padding: 4% 2%;
         }
+        .card-group{
+            max-width: 1240px;
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 20px;
+
+
+            @media #{$mobile} {
+                grid-template-columns: 1fr 1fr;
+            }
+            .card{
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+                padding: 0 0 4% 0%;
+                text-align: center;
+                img {
+                    padding: 0;
+                    border-radius: 10px;
+                    max-width: $card-width;
+                    margin-bottom: 4%;
+                }
+
+                h1 {
+                    font-size: 1.4em;
+                }
+
+                h2 {
+                    font-size: 1em;
+                }
+
+                h3 {
+                    font-size: 0.8em;
+                    a {
+                        margin: 2%;
+                        padding: 2% 4%;
+
+                        transition: all 0.3s;
+                        text-decoration: none;
+
+                        color: $white;
+                        border-radius: 4px;
+
+                        border: none;
+                        background-color: $main-color;
+
+                        font-size: 1.2em;
+                        @media #{$mobile}{
+                            font-size: 1.4em;
+                            padding: 1% 5%;
+                        }
+                        &:hover{
+                            box-shadow: 0px 8px 16px $shadow;
+                        }
+
+                        &:active{
+                            background-color: darken($main-color, 20%);
+                            box-shadow: 0px 4px 8px $shadow;
+                        }
+                    }
+                }
+            }
+        }
     }
+
 
     .footer{
         background: rgba(25, 25, 25, 0.5);

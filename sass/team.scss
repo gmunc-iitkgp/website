@@ -1,5 +1,5 @@
-$pink: #F06C6C;
-$main-color: #8B23D3;
+@import "main";
+
 $card-width: 400px;
 
 // Media Queries
@@ -27,7 +27,10 @@ $desktop: "(orientation: landscape)";
     }
 
     .page {
-        //
+        .desc{
+            color: white;
+            margin: 10% 0;
+        }
     }
 
     .card-group{
