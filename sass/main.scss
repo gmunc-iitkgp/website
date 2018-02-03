@@ -205,8 +205,8 @@ html{
             z-index: 10;
 
             img{
-                width: 300px;
-                height: 300px;
+                height: 33%;
+                width: auto;
                 margin: 5%;
                 @media #{$mobile}{
                     margin-top: 10%;
@@ -235,22 +235,14 @@ html{
             }
 
             @media screen and (max-width: 1499px) and (orientation: landscape) {
-                img {
-                    margin: 4%;
-                }
                 h1 {
-                    font-size: 2em;
+                    font-size: 2.1em;
                 }
                 h2 {
                     font-size: 1.7em;
                 }
             }
             @media screen and (max-width: 1199px) and (orientation: landscape) {
-                img {
-                    width: 250px;
-                    height: 250px;
-                    margin: 4%;
-                }
                 h1 {
                     font-size: 1.6em;
                 }
@@ -259,19 +251,14 @@ html{
                 }
             }
             @media screen and (max-width: 999px) and (orientation: landscape) {
-                img {
-                    width: 200px;
-                    height: 200px;
-                    margin: 4%;
-                }
                 h1 {
-                    font-size: 1.6em;
+                    font-size: 1.5em;
                 }
                 h2 {
-                    font-size: 1.4em;
+                    font-size: 1.3em;
                 }
             }
-            @media screen and (max-height: 400px) and (orientation: landscape) {
+            @media screen and (max-height: 350px) and (orientation: landscape) {
                 img {
                     height: 60%;
                     width: auto;
