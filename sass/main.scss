@@ -14,7 +14,6 @@ $red: rgb(232, 106, 66);
 $yellow: #FFD05D;
 $pink: #F06C6C;
 $violet: #8B23D3;
-$rtfd: #8BA0AE;
 
 
 $white: rgb(255, 255, 255);
@@ -104,7 +103,7 @@ $desktop: "(orientation: landscape)";
 
         &.black-button{ @include button($dark-grey); };
 
-        &.rtfd-button{@include button($rtfd);}
+        &.light-button{@include button($grey);}
 
         &.fb-button{ @include button($fb-blue); };
 

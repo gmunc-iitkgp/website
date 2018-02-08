@@ -8,31 +8,6 @@ $desktop: "(orientation: landscape)";
 #feed{
     background: linear-gradient(to left, $pink, $main-color);
 
-    .back-button {
-        position: fixed;
-        bottom: 0;
-        padding: 2%;
-        padding-bottom: 1%;
-        font-weight: 300;
-        @media #{$mobile} {
-            margin: 1%;
-            z-index: 100;
-            top: 0;
-            padding-top: 1%;
-            bottom: inherit;
-            background-color: rgba(#000, 0.5);
-            border-radius: 4px;
-        }
-        a{
-            font-size: 120%;
-            color: white;
-            text-decoration: none;
-            @media #{$mobile} {
-                font-size: 2em;
-            }
-        }
-    }
-
     .header{
         height: 70%;
         background: none;
