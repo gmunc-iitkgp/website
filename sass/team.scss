@@ -83,6 +83,8 @@ $desktop: "(orientation: landscape)";
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-gap: 0px;
+
+        max-width: 360px;
     }
 
     .footer{
