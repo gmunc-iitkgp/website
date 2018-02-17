@@ -13,7 +13,7 @@ $desktop: "(orientation: landscape)";
         background: none;
 
         @media #{$mobile} {
-            height: 50%;
+            height: 60%;
         }
         img{
             margin-top: 4%;
@@ -23,7 +23,7 @@ $desktop: "(orientation: landscape)";
         }
         h1{
             @media #{$mobile}{
-                font-size: 8em;
+                font-size: 2em;
             }
         }
         h2{
@@ -44,6 +44,7 @@ $desktop: "(orientation: landscape)";
             h2{
                 margin: 0;
                 padding-top: 0;
+                padding: auto 4%;
                 font-size: 1.4em;
                 font-style: italic;
             }
@@ -56,7 +57,9 @@ $desktop: "(orientation: landscape)";
             }
             &#fb {
                 text-align: center;
-
+                @media #{$mobile} {
+                    padding: 4% 0%;
+                }
                 #iframeFB {
                     margin: 20% 0;
 
@@ -67,9 +70,19 @@ $desktop: "(orientation: landscape)";
 
                 iframe {
                     transform: scale(1.4);
+                    &#FBmobile{
+                        display: none;
+                    }
 
                     @media #{$mobile} {
-                       transform: scale(1);
+                        &#FBdesktop {
+                            display: none;
+                        }
+                        &#FBmobile{
+                            display: inherit;
+                        }
+                       transform: inherit;
+                       width: 100%;
                     }
                 }
             }
