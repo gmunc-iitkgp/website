@@ -33,7 +33,7 @@ $desktop: "(orientation: landscape)";
         }
     }
 
-    .card-group, .card-group-single{
+    .card-group, .card-group-single, .card-group-double{
         max-width: 1240px;
         margin: 0 auto;
 
@@ -85,6 +85,19 @@ $desktop: "(orientation: landscape)";
         grid-gap: 0px;
 
         max-width: 360px;
+    }
+
+    .card-group-double {
+        max-width: px;
+        margin: 0 auto;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+
+        max-width: 2*360px;
     }
 
     .footer{
