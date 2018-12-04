@@ -1,4 +1,6 @@
-# GMUNC IIT KGP
+# [ARCHIVED]
+This project has been archived. Please fork at your own interest
+GMUNC IIT KGP
 
 ![](images/icon.svg)
 
